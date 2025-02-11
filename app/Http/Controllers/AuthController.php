@@ -59,6 +59,7 @@ class AuthController extends Controller
     public function funSalir(Request $request){
         $usuario = $request->user();
         $usuario->tokens()->delete();
+        
         return response(["mensaje" => "Sesión Cerrada"], 200);
     }
 }
