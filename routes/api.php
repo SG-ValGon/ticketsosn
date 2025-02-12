@@ -20,3 +20,4 @@ Route::prefix('v1/auth')->group(function(){
     });
 
 });
+
